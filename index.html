@@ -3,64 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Profissional | Carlos Junior</title>
+    <title>Carlos Júnior | Especialista em Eletrônica & Instrumentação</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header class="navbar">
-        <div class="logo">CARLOS JUNIOR</div>
+        <div class="logo">CARLOS JÚNIOR</div>
         <nav>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Portfólio</a></li>
-                <li><a href="#">Processo</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#projetos">Projetos</a></li>
             </ul>
         </nav>
-        <div class="menu-icon">☰</div>
+        <a href="https://github.com/Carlosjr007-py" target="_blank" class="btn-github">GitHub</a>
     </header>
 
     <main>
-        <section class="hero">
+        <section id="home" class="hero">
             <div class="hero-content">
-                <span class="greeting">Olá, seja bem-vindo!</span>
-                <h1>Sou TECNICO EM ELETRÔNICA <br> <span>TE AUXILIAR</span></h1>
-                <p>Especialista em criar produtos digitais criativos e soluções estratégicas para o seu negócio.</p>
-                <button class="btn-primary">Vamos Conversar</button>
+                <span class="tagline">Especialista Técnico em Eletrônica</span>
+                <h1>TRANSFORMANDO TECNOLOGIA EM <br> <span>SOLUÇÕES DE INSPEÇÃO</span></h1>
+                <p>Experiente em eletrônica aplicada à instrumentação de dutos e desenvolvimento de tecnologias com PIGs instrumentados.</p>
+                
+                <div class="cta-group">
+                    <button class="btn-primary">Entrar em Contato</button>
+                    <a href="https://github.com/Carlosjr007-py" target="_blank" class="btn-secondary">Ver Projetos no GitHub</a>
+                </div>
             </div>
 
-            <div class="hero-image-container">
+            <div class="hero-visual">
                 <div class="blob-bg"></div>
-                <img src="sua-foto.png" alt="Foto Profissional" class="profile-img">
-                <div class="status-card top-left"><strong>2K+</strong> Projetos</div>
-                <div class="status-card bottom-right"><strong>5 Anos</strong> Prof. Montagem de PIG Instrumentado</div>
-                <div class="status-card middle-right">⭐ 4.8 Satisfação</div>
+                <img src="perfil-carlos.png" alt="Carlos Júnior" class="profile-img">
+                
+                <div class="status-card top-left"><strong>5+ Anos</strong> em PIGs Inteligentes</div>
+                <div class="status-card bottom-right"><strong>Certificado</strong> NR-13</div>
+                <div class="status-card middle-right"><strong>Expertise</strong> C++ & Python</div>
             </div>
         </section>
 
-        <section class="services">
-            <h2 class="section-title">NOSSOS SERVIÇOS</h2>
+        <section id="sobre" class="section-dark">
+            <div class="container">
+                <h2>PERFIL PROFISSIONAL</h2>
+                <p>Sou um profissional orientado para resultados, comprometido com a qualidade e inovação. Atuo de forma integrada com equipes de Engenharia, Eletrônica e Mecânica. Minha trajetória é marcada por uma promoção rápida de estagiário a profissional de montagem em apenas sete meses.</p>
+            </div>
+        </section>
+
+        <section id="experiencia" class="services">
+            <h2 class="section-title">PRINCIPAIS COMPETÊNCIAS</h2>
             <div class="services-grid">
                 <div class="service-item">
-                    <div class="icon">📁</div>
-                    <h3>Branding</h3>
-                    <p>Criação de identidade visual e posicionamento de marca sólido.</p>
+                    <div class="icon">⚡</div>
+                    <h3>Eletrônica & Instrumentação</h3>
+                    <p>Montagem e integração de sistemas complexos para PIGs, garantindo precisão e confiabilidade.</p>
                 </div>
                 <div class="service-item">
-                    <div class="icon">📱</div>
-                    <h3>UI/UX Design</h3>
-                    <p>Interfaces intuitivas focadas na melhor experiência do usuário.</p>
+                    <div class="icon">🛠️</div>
+                    <h3>Desenvolvimento de Testes</h3>
+                    <p>Criação de gabaritos e procedimentos que aumentaram a eficiência em 20%.</p>
                 </div>
                 <div class="service-item">
-                    <div class="icon">🎨</div>
-                    <h3>Product Design</h3>
-                    <p>Desenvolvimento de produtos digitais do conceito à execução.</p>
+                    <div class="icon">💻</div>
+                    <h3>Programação & Automação</h3>
+                    <p>Uso de C++ e Python para suporte em testes e automação de processos industriais.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="projects">
+            <div class="container">
+                <h2>PROJETOS E INOVAÇÕES</h2>
+                <div class="project-list">
+                    <div class="project-card">
+                        <h3>Otimização de Testes</h3>
+                        <p>Redução de falhas durante a inspeção de PIGs através de novos métodos de montagem.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Sensores Marítimos</h3>
+                        <p>Implementação de métodos avançados para ajuste de sensores e conectores marítimos.</p>
+                    </div>
+                </div>
+                <div class="github-footer">
+                    <p>Veja todos os meus códigos e projetos técnicos em:</p>
+                    <a href="https://github.com/Carlosjr007-py">github.com/Carlosjr007-py</a>
                 </div>
             </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <p>Carlos Júnior | contatocarlosjunior1@gmail.com | (21) 97022-3085</p>
+    </footer>
 
 </body>
 </html>
