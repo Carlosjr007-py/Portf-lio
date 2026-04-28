@@ -1,0 +1,171 @@
+/* ==========================================================================
+   CONFIGURAÇÕES GERAIS E VARIÁVEIS
+   ========================================================================== */
+:root {
+    --primary-color: #1a2a6c;    /* Azul Marinho Profissional */
+    --accent-color: #0052cc;     /* Azul de destaque */
+    --text-dark: #2d3436;        /* Cinza Grafite */
+    --text-light: #636e72;       /* Cinza para textos secundários */
+    --bg-light: #f4f7f6;         /* Fundo levemente cinza */
+    --white: #ffffff;
+    --font-main: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--white);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   HEADER / NAVBAR
+   ========================================================================== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 8%;
+    min-height: 80vh;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.greeting {
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin: 15px 0;
+}
+
+.hero-content h1 span {
+    color: var(--primary-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+/* CONTAINER DA IMAGEM E CARDS */
+.hero-image-container {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.blob-bg {
+    width: 450px;
+    height: 450px;
+    background: var(--primary-color);
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    position: absolute;
+    z-index: -1;
+}
+
+.profile-img {
+    width: 400px;
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.1));
+}
+
+.status-card {
+    position: absolute;
+    background: white;
+    padding: 12px 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    font-size: 0.9rem;
+}
+
+/* Posicionamento dos mini-cards conforme a imagem */
+.top-left { top: 10%; left: 0; }
+.middle-right { top: 40%; right: -20px; }
+.bottom-right { bottom: 10%; right: 5%; }
+
+/* ==========================================================================
+   SERVIÇOS
+   ========================================================================== */
+.services {
+    padding: 80px 8%;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.service-item h3 {
+    margin: 15px 0;
+    color: var(--primary-color);
+}
+
+.service-item p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
